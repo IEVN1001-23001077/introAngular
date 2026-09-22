@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form>
+                <div class="form-group pt=4">
+                    <label for="x1">Punto 1 en x:</label>
+                    <input [(ngModel)]="x1" name="x1" type="number" class="form-control"
+                    placeholder="Ingresa el primer punto en x">
+                </div>
+                <div class="form-group pt=4">
+                    <label for="y1">Punto 1 en y:</label>
+                    <input [(ngModel)]="y1" name="y1" type="number" class="form-control"
+                    placeholder="Ingresa el primer punto en y ">
+                </div>
+                 <div class="form-group pt=4">
+                    <label for="x2">Punto 2 en x:</label>
+                    <input [(ngModel)]="x2" name="x2" type="number" class="form-control"
+                    placeholder="Ingresa el segundo punto en x">
+                </div>
+                <div class="form-group pt=4">
+                    <label for="y1">Punto 2 en y:</label>
+                    <input [(ngModel)]="y2" name="y2" type="number" class="form-control"
+                    placeholder="Ingresa el segundo punto en y ">
+                </div>
+                <br>
+                <button (click)="calcular()" type="button" class="btn btn-primary">
+                    Calcular
+                </button>
+            </form>
+            </div>
+            <div class="col-6">
+                <h2>Resultado: {{resultado}}</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
